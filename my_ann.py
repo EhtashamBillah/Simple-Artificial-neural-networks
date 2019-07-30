@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -59,7 +58,7 @@ ann_classifier = Sequential()
 
 # The following network contains a input layer(11 nodes) and a hidden layer(6 nodes)
 ann_classifier.add(Dense(input_dim = 11,                      # no. of nodes in input layer = number of independent variables
-                         units = 6,                           # number of nodes in hiden layer
+                         units = 6,                           # number of nodes in 1st hiden layer
                          kernel_initializer= "uniform",       # initializing the weights with uniform distribution
                          activation= "relu"                   # activation function in hidden layer        
                          ))
