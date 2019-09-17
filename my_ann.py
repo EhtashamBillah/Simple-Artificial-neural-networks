@@ -71,20 +71,20 @@ ann_classifier.add(Dense(input_dim = 11,                      # no. of nodes in 
                          ))
 
 # Now adding the 2nd hidden layer
-ann_classifier.add(Dense(units = 6, # here input_dim is not required beacuse 2nd hidden layer is conneted to 1st hidden layer, not to input layer
+ann_classifier.add(Dense(units = 6, # here input_dim is not required because 2nd hidden layer is connected to 1st hidden layer, not to input layer
                          kernel_initializer= "uniform",
                          activation= "relu"
                          ))
 
 # Finally adding the output layer
-ann_classifier.add(Dense(units = 1, # no of units in output layer (p = yes/positive/1)
+ann_classifier.add(Dense(units = 1, # no of units in output layer (p = yes/positive/1) for 2-class classification
                          kernel_initializer= "uniform",
                          activation= "sigmoid"
                          ))
 
 # Now compiling the whole artificial neural network 
-#(Here we'll apply stochastic gradient descent on the whole network)
-ann_classifier.compile(optimizer = "adam", #adam is one of sgd method
+# (Here we'll apply stochastic gradient descent on the whole network)
+ann_classifier.compile(optimizer = "adam",           # adam is one of sgd method
                        loss = "binary_crossentropy", # loss function we want to minimize for 2-class classification
                        metrics = ["accuracy"]
                        )
