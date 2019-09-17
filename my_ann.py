@@ -54,12 +54,15 @@ from keras.layers import Dense
 # Initializing ann
 ann_classifier = Sequential()
 
-# adding the input layer and firts hiden layer.
-# rule of thumb: number of nodes in hidden layer = average number of nodes 
-# in the input layer and number of nodes in output layer. In this case, we have 
-# 11 input node and 1 output node. so number of hidden node = (11+1)/2 = 6. If we
-# dont want to use rule of thumb, then we can experiment with different number
-# of nodes using cross validation nad parameter tuning.
+"""
+adding the input layer and firts hiden layer.
+rule of thumb: number of nodes in hidden layer = average number of nodes 
+in the input layer and number of nodes in output layer. In this case, we have 
+11 input node and 1 output node. so number of hidden node = (11+1)/2 = 6. If we
+dont want to use rule of thumb, then we can experiment with different number
+of nodes using cross validation nad parameter tuning.
+
+"""
 
 # The following network contains a input layer(11 nodes) and a hidden layer(6 nodes)
 ann_classifier.add(Dense(input_dim = 11,                      # no. of nodes in input layer = number of independent variables
