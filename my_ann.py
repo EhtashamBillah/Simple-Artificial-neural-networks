@@ -60,7 +60,7 @@ rule of thumb: number of nodes in hidden layer = average number of nodes
 in the input layer and number of nodes in output layer. In this case, we have 
 11 input node and 1 output node. so number of hidden node = (11+1)/2 = 6. If we
 dont want to use rule of thumb, then we can experiment with different number
-of nodes using cross validation nad parameter tuning.
+of nodes using cross validation and parameter tuning.
 
 """
 
