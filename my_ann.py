@@ -42,7 +42,7 @@ scaled_x_train = pd.DataFrame(data = scaled_x_train,columns=x_train.columns)
 scaled_x_test = pd.DataFrame(data = scaled_x_test,columns=x_test.columns)
 
 # Correlation plot
-sns.heatmap(scaled_x.corr())
+sns.heatmap(scaled_x_train.corr())
 
 # Building ann
 # Sequential module to initilize the neural network
