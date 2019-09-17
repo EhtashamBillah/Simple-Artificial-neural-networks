@@ -61,7 +61,6 @@ in the input layer and number of nodes in output layer. In this case, we have
 11 input node and 1 output node. so number of hidden node = (11+1)/2 = 6. If we
 dont want to use rule of thumb, then we can experiment with different number
 of nodes using cross validation and parameter tuning.
-
 """
 
 # The following network contains a input layer(11 nodes) and a hidden layer(6 nodes)
@@ -78,7 +77,7 @@ ann_classifier.add(Dense(units = 6, # here input_dim is not required beacuse 2nd
                          ))
 
 # Finally adding the output layer
-ann_classifier.add(Dense(units = 1, # no of units in output layer (p=yes/poitive/1)
+ann_classifier.add(Dense(units = 1, # no of units in output layer (p = yes/positive/1)
                          kernel_initializer= "uniform",
                          activation= "sigmoid"
                          ))
